@@ -1,5 +1,6 @@
 ---
-- hosts: node
+- name: Apt Update
+  hosts: node
 
   become: true
   task:
