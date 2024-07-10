@@ -1,8 +1,9 @@
 ---
-- hosts: node
-
+- name: apt update
+  hosts: node
+  
   become: true
-  task:
+  tasks:
     - name: update apt packages
       apt:
         upgrade: yes
